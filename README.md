@@ -1,6 +1,6 @@
 # viewgle-vue
 
-A plugin for using Vue with [viewgle](https://www.npmjs.com/package/viewgle). This plugin leverages the `vue-router` to called `beforeEach` on routes to log the information to viewgle.
+A plugin for using Vue with [viewgle](https://www.npmjs.com/package/viewgle). This plugin leverages the `vue-router` to call `beforeEach` on routes to log the information to viewgle.
 
 ## Usage:
 
