@@ -1,0 +1,72 @@
+{
+  "name": "viewgle-vue",
+  "version": "0.0.1",
+  "author": "Kevin Wynn",
+  "description": "A plugin for using Vue with viewgle.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-wynn/viewgle-vue/issues"
+  },
+  "keywords": [
+    "vue",
+    "viewgle",
+    "analytics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-wynn/viewgle-vue.git"
+  },
+  "homepage": "https://github.com/kevin-wynn/viewgle-vue",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name viewgle-vue ./src/components/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.22"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/viewgle-vue.common.js"
+}
